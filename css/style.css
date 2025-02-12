@@ -1,0 +1,248 @@
+:root {
+  --Neutral-900: #062630;
+  --Neutral-700: #385159;
+  --Neutral-200: #e6e1df;
+  --Neutral-100: #faf5f3;
+  --Neutral-0: #ffffff;
+  --light-salmon-500: #fea36f;
+  --light-salmon-100: #fff5ef;
+  --light-salmon-50: #fff5ef;
+  --text-gradient: linear-gradient(107deg, #ff9a60 -11.37%, #062630 61.84%);
+  --gradient: linear-gradient(90deg, #ffe2d1 0%, #fff5ef 100%);
+}
+
+/* martian-mono-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Martian Mono';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/martian-mono-v3-latin-regular.woff2') format('woff2'),
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+      url('../fonts/martian-mono-v3-latin-regular.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+}
+/* martian-mono-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Martian Mono';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/martian-mono-v3-latin-600.woff2') format('woff2'),
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+      url('../fonts/martian-mono-v3-latin-600.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+}
+/* martian-mono-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Martian Mono';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/martian-mono-v3-latin-700.woff2') format('woff2'),
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+      url('../fonts/martian-mono-v3-latin-700.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+}
+/* inter-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/inter-v18-latin-regular.woff2') format('woff2'),
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+      url('../fonts/inter-v18-latin-regular.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+}
+/* fira-code-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Fira Code';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/fira-code-v22-latin-600.woff2') format('woff2'),
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+      url('../fonts/fira-code-v22-latin-600.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+}
+
+body {
+  font-family: Inter, sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: -0.5px;
+  color: var(--Neutral-700);
+}
+
+section,
+.join {
+  max-width: 1215px;
+  width: 100%;
+  margin-inline: auto;
+  padding-inline: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header {
+  min-height: 100vh;
+  /* height: 100vh; */
+  background-color: var(--Neutral-100);
+  background-image: url(../images/vector.svg);
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  /* gap: 80px; */
+  /* gap: clamp(5px, 50px, 80px); */
+  gap: 80px;
+  justify-content: space-between;
+
+  .empty {
+    color: transparent;
+    height: 1px;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    background-image: url(../images/Glow.svg);
+    width: 684px;
+    height: 684px;
+    right: 0;
+    bottom: 0;
+    background-repeat: no-repeat;
+    transform: translateX(30%) translateY(10%);
+  }
+  .logo {
+    max-width: 1215px;
+    width: 100%;
+    padding-inline: 20px;
+    display: flex;
+    justify-content: start;
+    margin-inline: auto;
+    margin-block-start: 24px;
+    img {
+      display: block;
+      height: 36px;
+    }
+  }
+  .join {
+    gap: 64px;
+    /* padding-block-end: 20px; */
+    .join-text {
+      max-width: 570px;
+      max-height: 490px;
+      /* height: 60vh; */
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 32px;
+      .join-text-top {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        h1 {
+          font-family: 'Martian Mono';
+          font-size: 7.57vh;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 120%;
+          letter-spacing: -2px;
+          background: var(--text-gradient);
+          background-clip: text;
+          color: transparent;
+        }
+      }
+      .join-text-bottom {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        a {
+          display: flex;
+          width: 380px;
+          height: 64px;
+          justify-content: center;
+          align-items: center;
+          padding-inline-start: 10px;
+          padding-inline-end: 50px;
+          border-radius: 8px;
+          border: 2px solid var(--Neutral-900, #062630);
+          background: var(--light-salmon-50, #fff5ef);
+          font-family: 'Martian Mono', sans-serif;
+          font-size: 18px;
+          font-weight: 600;
+          line-height: 130%;
+          letter-spacing: -1px;
+          text-transform: uppercase;
+          color: var(--Neutral-900, #062630);
+          position: relative;
+          transition: all 0.5s ease-in-out;
+          &::after {
+            content: '';
+            background-image: url(../images/icon-arrow-down.svg);
+            width: 24px;
+            height: 24px;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 22px;
+          }
+          &:hover {
+            background: var(--gradient);
+          }
+        }
+        .clients {
+          display: flex;
+          align-items: flex-end;
+          gap: 12px;
+          width: 388px;
+          height: 45px;
+          img {
+            display: block;
+            width: 110px;
+            height: 40px;
+          }
+          .clients-text {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            justify-content: space-between;
+            div {
+              width: 120px;
+              height: 24px;
+              background-image: url(../images/icon-star.svg);
+            }
+            p {
+              display: block;
+              font-family: 'Martian Mono';
+              font-size: 14px;
+              line-height: 120%;
+              letter-spacing: -1px;
+              /* padding-block-start: 28px; */
+            }
+          }
+        }
+      }
+    }
+    .img {
+      max-width: 540px;
+      width: 42vw;
+      /* width: 540px; */
+      max-height: 606px;
+      /* flex-shrink: 0; */
+      height: 74vh;
+      overflow: hidden;
+      img {
+        display: block;
+        width: 100%;
+        /* height: 100%; */
+      }
+    }
+  }
+}
+
+
+
+@media (max-width: 990px) {
+  
+}
