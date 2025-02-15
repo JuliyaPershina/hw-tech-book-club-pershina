@@ -26,7 +26,7 @@
             </p>
           </div>
           <div class="join-text-bottom">
-            <a href="#">Review membership options</a>
+            <a class="button" href="#membership">Review membership options</a>
             <div class="clients">
               <img
                 src="./images/image-avatars.webp"
@@ -47,35 +47,119 @@
     </header>
     <main>
       <section class="read">
-        Read together, grow together Monthly curated tech reads selected by
-        industry experts Virtual and in-person meetups for deep-dive discussions
-        Early access to new tech book releases Author Q&A sessions with tech
-        thought leaders
+        <img
+          src="./images/image-read-together-desktop.webp"
+          alt="People with books"
+        />
+        <div class="read-text">
+          <h2>Read together, grow together</h2>
+          <div>
+            <p>Monthly curated tech reads selected by industry experts</p>
+            <p>Virtual and in-person meetups for deep-dive discussions</p>
+            <p>Early access to new tech book releases</p>
+            <p>Author Q&A sessions with tech thought leaders</p>
+          </div>
+        </div>
       </section>
       <section class="average">
-        Not your average book club Connect with a community that speaks your
-        language - from Python to TypeScript and everything in between. Our
-        discussions blend technical depth with practical applications.
+        <div>
+          <h2>Not your average book <span class="oval">club</span></h2>
+          <div>
+            Connect with a community that speaks your language - from
+            <span class="bold">Python</span> to
+            <span class="bold">TypeScript</span> and everything in between. Our
+            discussions blend technical depth with practical applications.
+          </div>
+        </div>
+        <img src="./images/image-not-average-desktop.webp" alt="" />
       </section>
       <section class="journey">
-        Your tech reading journey 1 Choose your membership tier 2 Get your
-        monthly book selection 3 Join our discussion forums 4 Attend exclusive
-        meetups
+        <h2>Your tech reading journey</h2>
+        <div>
+          <div>
+            <p class="num">1</p>
+            <p>Choose your membership tier</p>
+          </div>
+          <div>
+            <p class="num">2</p>
+            <p>Get your monthly book selection</p>
+          </div>
+          <div>
+            <p class="num">3</p>
+            <p>Join our discussion forums</p>
+          </div>
+          <div>
+            <p class="num">4</p>
+            <p>Attend exclusive meetups</p>
+          </div>
+        </div>
       </section>
-      <section class="membership">
-        Membership options Starter $19/month 1 book/month Online forums
-        Subscribe now Pro $29/month 2 books/month Virtual meetups Subscribe now
-        Enterprise Custom Team access Private sessions Talk to us
+      <section class="membership" id="membership">
+        <h2>Membership options</h2>
+        <div>
+          <article class="starter">
+            <p class="option-name">Starter</p>
+            <p class="option-price"><span class="big">$19</span>/month</p>
+            <div class="option-items">
+              <p>1 book/month</p>
+              <p>Online forums</p>
+            </div>
+            <a class="button">Subscribe now</a>
+          </article>
+          <article class="pro">
+            <p class="option-name">Pro</p>
+            <p class="option-price"><span class="big">$29</span>/month</p>
+            <div class="option-items">
+              <p>2 books/month</p>
+              <p>Virtual meetups</p>
+            </div>
+            <a class="button">Subscribe now</a>
+          </article>
+          <article class="enterprise">
+            <p class="option-name">Enterprise</p>
+            <p class="option-price"><span class="big">Custom</span></p>
+            <div class="option-items">
+              <p>Team access</p>
+              <p>Private sessions</p>
+            </div>
+            <a class="button">Talk to us</a>
+          </article>
+        </div>
       </section>
       <section class="feedback">
-        "This book club transformed my technical reading from a solitary
-        activity into an enriching community experience. The discussions are
-        gold!" Sarah Chen, Software Architect
+        <h2>Feedback</h2>
+        <div></div>
+        <blockquote cite="#">
+          <p>
+            "This book club transformed my technical reading from a solitary
+            activity into an enriching community experience. The discussions are
+            gold!"
+          </p>
+        </blockquote>
+        <p>Sarah Chen, Software Architect</p>
       </section>
     </main>
     <footer>
-      Ready to debug your reading list? Review membership options 200+
-      developers joined already © 2024 - Tech Book Club
+      <section>
+        <h2>Ready to debug your reading list?</h2>
+        <a href="#membership" class="button">Review membership options</a>
+
+        <div class="developers">
+          <img src="./images/image-avatars.webp" alt="">
+          <div class="clients-text">
+            <div></div>
+            <p>200+ developers joined already</p>
+          </div>
+        </div>
+
+        <div class="bottom">
+          <p>© 2024 - Tech Book Club</p>
+          <div>
+            <a href="#"><img src="./images/logo-bluesky.svg" alt=""></a>
+            <a href="#"><img src="./images/logo-linkedin.svg" alt=""></a>
+          </div>
+        </div>
+      </section>
     </footer>
   </body>
 </html>
