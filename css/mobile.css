@@ -1,8 +1,4 @@
 @media (max-width: 765px) {
-  .button {
-    width: 100%;
-    font-size: 16px;
-  }
   header {
     gap: 48px;
     & .join {
@@ -37,6 +33,32 @@
       margin-inline: 16px;
     }
   }
+
+  .button {
+    width: 100%;
+    font-size: 16px;
+  }
+  
+  main {
+    .read,
+    .average {
+      & div {
+        gap: 24px;
+        div {
+          gap: 16px;
+        }
+      }
+      .big-img {
+        height: auto;
+        img {
+          &::before {
+            background-image: url(../images/image-read-together-mobile.webp);
+          }
+        }
+      }
+    }
+  }
+
   section {
     margin-block-start: 64px;
     margin-inline: 16px;
@@ -44,15 +66,7 @@
       font-size: 34px;
     }
   }
-  .read,
-  .average {
-    & div {
-      gap: 24px;
-      div {
-        gap: 16px;
-      }
-    }
-  }
+
   .average {
     &::before {
       display: none;
@@ -81,21 +95,22 @@
       line-height: 110%;
     }
   }
-  header, footer{
+  header,
+  footer {
     .button {
-        overflow: hidden;
-        &::before{
-          text-align: center;
+      overflow: hidden;
+      &::before {
+        text-align: center;
         padding-inline-start: 0;
         left: -20px;
-        }
-        &:hover::before{
-            text-align: center;
-        padding-inline-start: 0;
-        }
       }
+      &:hover::before {
+        text-align: center;
+        padding-inline-start: 0;
+      }
+    }
   }
-  
+
   footer {
     section {
       padding-block-start: 48px;
@@ -106,7 +121,7 @@
           }
         }
       }
-      
+
       .bottom {
         margin-block-start: 64px;
         flex-direction: column;

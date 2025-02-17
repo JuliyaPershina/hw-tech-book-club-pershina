@@ -42,19 +42,33 @@
           max-width: none;
         }
       }
-      img {
-        order: 2;
+      .big-img {
         width: 100%;
-        object-fit: cover;
-        height: fit-content;
+        height: 653px;
+        order: 2;
+        img {
+          width: 100%;
+          object-fit: cover;
+          height: fit-content;
+          position: relative;
+          &::before {
+            content: '';
+            background-image: url(../images/image-read-together-tablet.webp);
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+          }
+        }
       }
     }
     .average {
-          &::before{
-            bottom: 50px;
-      left: auto;
-      right: 0px;
-          }
+      &::before {
+        bottom: 50px;
+        left: auto;
+        right: 0px;
+      }
     }
     .journey {
       display: none;
@@ -73,7 +87,6 @@
           height: 358px;
         }
       }
-
     }
     .feedback {
       align-items: flex-start;
@@ -83,7 +96,4 @@
       }
     }
   }
-}
-@media (max-width: 765px) {
-  
 }

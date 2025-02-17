@@ -270,13 +270,20 @@ header {
 .read,
 .average {
   gap: 80px;
-  img {
-    display: block;
+  .big-img {
     width: 560px;
     height: 520px;
-    object-fit: contain;
-    border-radius: 20px;
+    width: 100%;
+    img {
+      display: block;
+      object-fit: contain;
+      border-radius: 20px;
+      width: 560px;
+      height: 520px;
+      max-width: fit-content;
+    }
   }
+
   div {
     display: flex;
     flex-direction: column;
@@ -492,6 +499,7 @@ header {
         }
       }
     }
+
     .starter {
       .button {
         &::before {
@@ -524,6 +532,7 @@ header {
         }
       }
     }
+    
     .enterprise {
       .button {
         &::before {
@@ -579,6 +588,7 @@ footer {
   color: var(--Neutral-100);
   border-radius: 16px 16px 0px 0px;
   font-family: 'Martian Mono', sans-serif;
+
   section {
     margin-block-start: 0;
     padding-block-start: 80px;
@@ -586,6 +596,7 @@ footer {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+
     h2 {
       display: block;
       color: inherit;
@@ -594,6 +605,7 @@ footer {
       text-align: center;
       margin-block-end: 40px;
     }
+
     .button {
       margin-block-end: 24px;
       border: 2px solid var(--Neutral-0, #fff);
@@ -681,4 +693,3 @@ footer {
     }
   }
 }
-
