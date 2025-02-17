@@ -1,0 +1,122 @@
+@media (max-width: 765px) {
+  .button {
+    width: 100%;
+    font-size: 16px;
+  }
+  header {
+    gap: 48px;
+    & .join {
+      & .join-text {
+        & .join-text-top {
+          h1 {
+            font-size: 38px;
+          }
+        }
+        & .join-text-bottom {
+          .clients {
+            height: 62px;
+            img {
+              align-self: center;
+            }
+            & .clients-text {
+              p {
+                text-wrap: initial;
+              }
+            }
+          }
+        }
+      }
+      .img {
+        background-image: url(../images/image-hero-mobile.webp);
+        max-height: 384px;
+      }
+    }
+
+    section,
+    .join {
+      margin-inline: 16px;
+    }
+  }
+  section {
+    margin-block-start: 64px;
+    margin-inline: 16px;
+    h2 {
+      font-size: 34px;
+    }
+  }
+  .read,
+  .average {
+    & div {
+      gap: 24px;
+      div {
+        gap: 16px;
+      }
+    }
+  }
+  .average {
+    &::before {
+      display: none;
+    }
+    & div {
+      & h2 {
+        .oval::before {
+          background-size: contain;
+          background-repeat: no-repeat;
+          left: -8px;
+        }
+      }
+    }
+  }
+  .membership {
+    gap: 24px;
+    div {
+      article {
+        margin-inline: auto;
+      }
+    }
+  }
+  .feedback {
+    p {
+      font-size: 24px;
+      line-height: 110%;
+    }
+  }
+  header, footer{
+    .button {
+        overflow: hidden;
+        &::before{
+          text-align: center;
+        padding-inline-start: 0;
+        left: -20px;
+        }
+        &:hover::before{
+            text-align: center;
+        padding-inline-start: 0;
+        }
+      }
+  }
+  
+  footer {
+    section {
+      padding-block-start: 48px;
+      & .developers {
+        & .clients-text {
+          p {
+            text-wrap: initial;
+          }
+        }
+      }
+      
+      .bottom {
+        margin-block-start: 64px;
+        flex-direction: column;
+        min-height: 103px;
+        gap: 16px;
+        justify-content: center;
+        div {
+          height: 22px;
+        }
+      }
+    }
+  }
+}

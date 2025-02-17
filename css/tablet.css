@@ -1,0 +1,89 @@
+@media (max-width: 1050px) {
+  section,
+  .join {
+    flex-direction: column;
+    margin-inline: 32px;
+    padding-inline: 0;
+  }
+  section {
+    margin-block-start: 80px;
+  }
+  header {
+    gap: 64px;
+    .join {
+      .join-text {
+        max-width: none;
+        max-height: none;
+      }
+      .img {
+        width: 100%;
+        max-width: none;
+        max-height: none;
+        height: 77.5vh;
+        background-image: url(../images/image-hero-tablet.webp);
+        background-size: cover;
+        img {
+          display: none;
+        }
+      }
+    }
+  }
+  main {
+    .read,
+    .average {
+      gap: 40px;
+      div {
+        order: 1;
+        align-self: start;
+        h2 {
+          max-width: 600px;
+        }
+        div {
+          max-width: none;
+        }
+      }
+      img {
+        order: 2;
+        width: 100%;
+        object-fit: cover;
+        height: fit-content;
+      }
+    }
+    .average {
+          &::before{
+            bottom: 50px;
+      left: auto;
+      right: 0px;
+          }
+    }
+    .journey {
+      display: none;
+    }
+    .membership {
+      h2 {
+        align-self: flex-start;
+      }
+      div {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: 24px;
+        article,
+        .pro {
+          width: 340px;
+          height: 358px;
+        }
+      }
+
+    }
+    .feedback {
+      align-items: flex-start;
+      padding-block-end: 80px;
+      p {
+        text-align: start;
+      }
+    }
+  }
+}
+@media (max-width: 765px) {
+  
+}

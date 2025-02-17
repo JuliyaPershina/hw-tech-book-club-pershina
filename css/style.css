@@ -76,7 +76,6 @@ body {
 section,
 .join {
   max-width: 1210px;
-  width: 100%;
   margin-inline: auto;
   padding-inline: 20px;
   display: flex;
@@ -99,6 +98,7 @@ header {
   min-height: 100vh;
   background-color: var(--Neutral-100);
   background-image: url(../images/vector.svg);
+  border-image-width: auto;
   overflow: hidden;
   position: relative;
   display: flex;
@@ -165,65 +165,11 @@ header {
         display: flex;
         flex-direction: column;
         gap: 20px;
-        /* .button {
-          display: flex;
-          width: 380px;
-          height: 64px;
-          justify-content: center;
-          align-items: center;
-          padding-inline-start: 10px;
-          padding-inline-end: 50px;
-          border-radius: 8px;
-          border: 2px solid var(--Neutral-900, #062630);
-          background-color: var(--light-salmon-50, #fff5ef);
-          font-family: 'Martian Mono', sans-serif;
-          font-size: 18px;
-          font-weight: 600;
-          line-height: 130%;
-          letter-spacing: -1px;
-          text-transform: uppercase;
-          color: var(--Neutral-900, #062630);
-          position: relative;
-          transition: all 0.5s ease-in-out 0s;
-          &::after {
-            content: '';
-            background-image: url(../images/icon-arrow-down.svg);
-            width: 24px;
-            height: 24px;
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            right: 22px;
-          }
-          &::before {
-            content: 'Review membership options';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border-radius: 8px;
-            background: var(--gradient);
-            opacity: 0;
-            align-content: center;
-            padding-inline-start: 24px;
-            transition: opacity 0.5s ease-in-out 0s;
-          }
-          &:hover::before {
-            opacity: 1;
-          }
-          &:active {
-            border: 2px solid var(--Neutral-900, #062630);
-            background: var(--gradient);
-            box-shadow: 0px 0px 0px 3px #fff,
-              0px 0px 0px 5px var(--Neutral-700, #385159);
-          }
-        } */
         .clients {
           display: flex;
           align-items: flex-end;
           gap: 12px;
-          width: 388px;
+          max-width: 388px;
           height: 45px;
           img {
             display: block;
@@ -257,6 +203,7 @@ header {
       max-height: 606px;
       height: 74vh;
       overflow: hidden;
+      align-content: center;
       img {
         display: block;
         width: 100%;
@@ -734,5 +681,4 @@ footer {
     }
   }
 }
-@media (max-width: 990px) {
-}
+
