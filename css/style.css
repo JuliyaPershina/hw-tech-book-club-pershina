@@ -434,6 +434,9 @@ main {
   gap: 64px;
   justify-content: space-between;
   div {
+    input {
+      display: none;
+    }
     display: flex;
     flex-direction: row;
     max-width: 970px;
@@ -442,6 +445,7 @@ main {
     justify-content: space-between;
     align-items: center;
     article {
+      input[type='radio'] + label {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -452,64 +456,68 @@ main {
       border-radius: 8px;
       border: 1px solid var(--Neutral-200, #e6e1df);
       background: var(--Neutral-0, #fff);
-      .option-name {
-        font-family: 'Martian Mono';
-        font-size: 24px;
-        font-weight: 600;
-        line-height: 110%;
-        letter-spacing: -1px;
-        color: var(--Neutral-900);
-      }
-      .option-price {
-        padding-block-end: 24px;
-        border-bottom: 1px solid var(--Neutral-200);
-      }
-      .big {
-        font-family: 'Martian Mono';
-        font-size: 34px;
-        font-weight: 600;
-        line-height: 130%;
-        letter-spacing: -1px;
-        color: var(--Neutral-900);
-        margin-inline-end: 8px;
-      }
-      .option-items {
-        max-width: 238px;
-        min-height: 72px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: start;
-        padding-inline-start: 36px;
-
-        p {
-          position: relative;
+      
+        .option-name {
+          font-family: 'Martian Mono';
+          font-size: 24px;
+          font-weight: 600;
+          line-height: 110%;
+          letter-spacing: -1px;
+          color: var(--Neutral-900);
         }
-        p::after {
-          content: '';
-          position: absolute;
-          background-image: url(../images/icon-check.svg);
-          background-repeat: no-repeat;
-          width: 24px;
-          width: 100%;
-          height: 24px;
-          height: 100%;
-          top: 50%;
-          left: 0;
-          transform: translate(-36px, -50%);
+        .option-price {
+          padding-block-end: 24px;
+          border-bottom: 1px solid var(--Neutral-200);
+        }
+        .big {
+          font-family: 'Martian Mono';
+          font-size: 34px;
+          font-weight: 600;
+          line-height: 130%;
+          letter-spacing: -1px;
+          color: var(--Neutral-900);
+          margin-inline-end: 8px;
+        }
+        .option-items {
+          max-width: 238px;
+          min-height: 72px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: start;
+          padding-inline-start: 36px;
+
+          p {
+            position: relative;
+          }
+          p::after {
+            content: '';
+            position: absolute;
+            background-image: url(../images/icon-check.svg);
+            background-repeat: no-repeat;
+            width: 24px;
+            width: 100%;
+            height: 24px;
+            height: 100%;
+            top: 50%;
+            left: 0;
+            transform: translate(-36px, -50%);
+          }
         }
       }
     }
 
-    .starter {
-      .button {
-        &::before {
+    .starter input[type='radio'] + label, .pro input[type='radio'] + label{
+      
+        .button {
+        &::before { 
           content: 'Subscribe now';
         }
       }
+      
     }
 
-    .pro {
+     input[type='radio']:checked + label {
       width: 350px;
       height: 390px;
       padding-block: 40px;
@@ -534,7 +542,7 @@ main {
       }
     }
 
-    .enterprise {
+    .enterprise input[type='radio'] + label{
       .button {
         &::before {
           content: 'Talk to us';

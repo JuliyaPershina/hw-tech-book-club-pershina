@@ -67,7 +67,7 @@ main {
     }
     div {
       justify-content: flex-start;
-      flex-wrap: wrap;
+      /* flex-wrap: wrap; */
       gap: 24px;
       article,
       .pro {
