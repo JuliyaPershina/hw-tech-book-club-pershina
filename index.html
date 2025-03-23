@@ -42,8 +42,24 @@
           </div>
         </div>
         <div class="img">
-          <img src="./images/image-hero-desktop.webp" 
-          alt="Three people with a book at the table"/>
+          <picture>
+            <source
+              srcset="./images/image-hero-desktop.webp"
+              media="(min-width: 1050px)"
+            />
+            <source
+              srcset="./images/image-hero-tablet.webp"
+              media="(min-width: 765px)"
+            />
+            <source
+              srcset="./images/image-hero-mobile.webp"
+              media="(min-width: 300px)"
+            />
+            <img
+              src="./images/image-hero-desktop.webp"
+              alt="Three people with a book at the table"
+            />
+          </picture>
         </div>
       </div>
       <div class="empty"></div>
@@ -51,10 +67,24 @@
     <main>
       <section class="read">
         <div class="big-img">
-          <img
-            src="./images/image-read-together-desktop.webp"
-            alt="People with books"
-          />
+          <picture>
+            <source
+              srcset="./images/image-read-together-desktop.webp"
+              media="(min-width: 1050px)"
+            />
+            <source
+              srcset="./images/image-read-together-tablet.webp"
+              media="(min-width: 765px)"
+            />
+            <source
+              srcset="./images/image-read-together-mobile.webp"
+              media="(min-width: 300px)"
+            />
+            <img
+              src="./images/image-read-together-desktop.webp"
+              alt="People with books"
+            />
+          </picture>
         </div>
         <div class="read-text">
           <h2>Read together, grow together</h2>
@@ -76,7 +106,26 @@
             discussions blend technical depth with practical applications.
           </div>
         </div>
-        <div class="big-img"><img src="./images/image-not-average-desktop.webp" alt="Three people discussing a book" /></div>
+        <div class="big-img">
+          <picture>
+            <source
+              srcset="./images/image-not-average-desktop.webp"
+              media="(min-width: 1050px)"
+            />
+            <source
+              srcset="./images/image-not-average-tablet.webp"
+              media="(min-width: 765px)"
+            />
+            <source
+              srcset="./images/image-not-average-mobile.webp"
+              media="(min-width: 300px)"
+            />
+            <img
+              src="./images/image-not-average-desktop.webp"
+              alt="Three people discussing a book"
+            />
+          </picture>
+        </div>
       </section>
       <section class="journey">
         <h2>Your tech reading journey</h2>
@@ -150,7 +199,10 @@
         <a href="#membership" class="button">Review membership options</a>
 
         <div class="developers">
-          <img src="./images/image-avatars.webp" alt="Three avatars of developers">
+          <img
+            src="./images/image-avatars.webp"
+            alt="Three avatars of developers"
+          />
           <div class="clients-text">
             <div></div>
             <p>200+ developers joined already</p>
@@ -160,8 +212,12 @@
         <div class="bottom">
           <p>© 2024 - Tech Book Club</p>
           <div>
-            <a href="#"><img src="./images/logo-bluesky.svg" alt="logo bluesky"></a>
-            <a href="#"><img src="./images/logo-linkedin.svg" alt="logo linkedin"></a>
+            <a href="#"
+              ><img src="./images/logo-bluesky.svg" alt="logo bluesky"
+            /></a>
+            <a href="#"
+              ><img src="./images/logo-linkedin.svg" alt="logo linkedin"
+            /></a>
           </div>
         </div>
       </section>
