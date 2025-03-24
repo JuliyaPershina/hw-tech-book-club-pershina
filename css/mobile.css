@@ -22,7 +22,6 @@
           }
         }
       }
-      
     }
 
     section,
@@ -79,9 +78,16 @@
     }
   }
   .membership {
+    max-width: 344px;
     gap: 24px;
+    h2 {
+      width: 343px;
+      height: 88px;
+      margin-inline: auto;
+    }
     div {
       article {
+        height: 356px;
         margin-inline: auto;
       }
     }

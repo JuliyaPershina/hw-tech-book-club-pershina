@@ -439,10 +439,11 @@ main {
     }
     display: flex;
     flex-direction: row;
+    gap: 24px;
     max-width: 970px;
     width: 100%;
     min-height: 390px;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     article {
       input[type='radio'] + label {
@@ -466,6 +467,8 @@ main {
           color: var(--Neutral-900);
         }
         .option-price {
+          display: flex;
+          align-items: center;
           padding-block-end: 24px;
           border-bottom: 1px solid var(--Neutral-200);
         }

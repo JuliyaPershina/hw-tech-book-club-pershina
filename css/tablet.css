@@ -22,65 +22,72 @@
       }
     }
   }
-}
-main {
-  .read,
-  .average {
-    gap: 40px;
-    div {
-      width: 100%;
-      /* order: 1; */
-      align-self: start;
+
+  main {
+    .read,
+    .average {
+      gap: 40px;
+      div {
+        width: 100%;
+        /* order: 1; */
+        align-self: start;
+        h2 {
+          max-width: 600px;
+        }
+        div {
+          max-width: none;
+          width: 100%;
+        }
+      }
+      .big-img {
+        width: 100%;
+        height: auto;
+        order: 2;
+        img {
+          width: 100%;
+          object-fit: cover;
+          height: fit-content;
+          position: relative;
+        }
+      }
+    }
+    .average {
+      &::before {
+        bottom: 50px;
+        left: auto;
+        right: 0px;
+      }
+    }
+    .journey {
+      display: none;
+    }
+    .membership {
+      max-width: 704px;
+      margin-inline: auto;
       h2 {
-        max-width: 600px;
+        align-self: flex-start;
       }
       div {
-        max-width: none;
-        width: 100%;
+        max-width: 704px;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: 24px;
+        article {
+          input[type='radio'] + label,
+          input[type='radio']:checked + label {
+            width: 340px;
+            height: 358px;
+            padding-block: 24px;
+          }
+        }
       }
     }
-    .big-img {
-      width: 100%;
-      height: auto;
-      /* order: 2; */
-      img {
-        width: 100%;
-        object-fit: cover;
-        height: fit-content;
-        position: relative;
+    .feedback {
+      align-items: flex-start;
+      padding-block-end: 80px;
+      p {
+        text-align: start;
       }
-    }
-  }
-  .average {
-    &::before {
-      bottom: 50px;
-      /* left: auto; */
-      right: 0px;
-    }
-  }
-  .journey {
-    display: none;
-  }
-  .membership {
-    h2 {
-      align-self: flex-start;
-    }
-    div {
-      justify-content: flex-start;
-      /* flex-wrap: wrap; */
-      gap: 24px;
-      article,
-      .pro {
-        width: 340px;
-        height: 358px;
-      }
-    }
-  }
-  .feedback {
-    align-items: flex-start;
-    padding-block-end: 80px;
-    p {
-      text-align: start;
     }
   }
 }
